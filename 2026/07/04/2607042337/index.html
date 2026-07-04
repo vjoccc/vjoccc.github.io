@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="hexo-theme" content="https://github.com/xaoxuu/hexo-theme-stellar/tree/1.33.1" theme-name="Stellar" theme-version="1.33.1">
   
-  <meta name="robots" content="noindex,follow">
+  
   <meta name="generator" content="Hexo 8.1.2">
   <meta http-equiv='x-dns-prefetch-control' content='on' />
   
@@ -17,22 +17,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>归档 - Docker项目库</title>
+  <title>SSH远程操控命令 - Docker项目库</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="归档">
-<meta property="og:url" content="http://example.com/archives/2026/">
+    <meta name="description" content="# 展示当前目录树形（含所有文件）  tree  # 只显示2层目录  tree -L 2  # 跳到飞牛Nas的Docker目录下  cd &#x2F;vol1&#x2F;1000&#x2F;Docker&#x2F;  # 返回上一级目录  cd ..&#x2F;  # 列出当前目录文件  ls  # 列出当前目录文件(树状图的形式)  tree -L 1  # 创建“临时”文件夹  mkdir 临时  # 删除“临时”文件夹  rm -rf">
+<meta property="og:type" content="article">
+<meta property="og:title" content="SSH远程操控命令">
+<meta property="og:url" content="http://example.com/2026/07/04/2607042337/">
 <meta property="og:site_name" content="Docker项目库">
+<meta property="og:description" content="# 展示当前目录树形（含所有文件）  tree  # 只显示2层目录  tree -L 2  # 跳到飞牛Nas的Docker目录下  cd &#x2F;vol1&#x2F;1000&#x2F;Docker&#x2F;  # 返回上一级目录  cd ..&#x2F;  # 列出当前目录文件  ls  # 列出当前目录文件(树状图的形式)  tree -L 1  # 创建“临时”文件夹  mkdir 临时  # 删除“临时”文件夹  rm -rf">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/logo.png">
+<meta property="article:published_time" content="2026-07-04T15:35:00.000Z">
+<meta property="article:modified_time" content="2026-07-04T15:35:56.000Z">
 <meta property="article:author" content="刘郎">
+<meta property="article:tag" content="Docker">
+<meta property="article:tag" content="NAS">
+<meta property="article:tag" content="SSH">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/logo.png">
   
   
   
-  
+  <meta name="keywords" content="NAS,Docker,SSH">
 
   <!-- feed -->
   
@@ -44,10 +51,10 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"http://example.com","author":{"@type":"Person","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png"},"name":"Docker项目库","description":"","url":"http://example.com"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png"},"dateCreated":"2026-07-04T23:35:00+08:00","dateModified":"2026-07-04T23:35:56+08:00","datePublished":"2026-07-04T23:35:00+08:00","description":"","headline":"SSH远程操控命令","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2026/07/04/2607042337/"},"publisher":{"@type":"Organization","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png","logo":{"@type":"ImageObject","url":"http://example.com/images/logo.png"}},"url":"http://example.com/2026/07/04/2607042337/","keywords":"NAS, Docker, SSH","image":[]}</script>
   
 </head>
-<body><div id="l_cover"></div><div class="l_body index" id="start" layout="undefined" type="undefined" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+<body><div id="l_cover"></div><div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/images/logo.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Docker项目库</div></a></div></header>
@@ -59,17 +66,128 @@
 <div class="widgets">
 <div class="search-wrapper" id="search-wrapper"><form class="search-form"><a class="search-button" onclick="document.getElementById(&quot;search-input&quot;).focus();"><svg t="1705074644177" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1560" width="200" height="200"><path d="M1008.839137 935.96571L792.364903 719.491476a56.783488 56.783488 0 0 0-80.152866 0 358.53545 358.53545 0 1 1 100.857314-335.166073 362.840335 362.840335 0 0 1-3.689902 170.145468 51.248635 51.248635 0 1 0 99.217358 26.444296 462.057693 462.057693 0 1 0-158.255785 242.303546l185.930047 185.725053a51.248635 51.248635 0 0 0 72.568068 0 51.248635 51.248635 0 0 0 0-72.978056z" p-id="1561"></path><path d="M616.479587 615.969233a50.428657 50.428657 0 0 0-61.498362-5.534852 174.655348 174.655348 0 0 1-177.525271 3.484907 49.403684 49.403684 0 0 0-58.833433 6.76482l-3.074918 2.869923a49.403684 49.403684 0 0 0 8.609771 78.10292 277.767601 277.767601 0 0 0 286.992355-5.739847 49.403684 49.403684 0 0 0 8.404776-76.667958z" p-id="1562"></path></svg></a><input type="text" class="search-input" id="search-input" placeholder="站内搜索"></form><div id="search-result"></div><div class="search-no-result">没有找到内容！</div></div>
 
+
+
 <widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/07/04/2607042337/"><span class="title">SSH远程操控命令</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/images/logo.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Docker项目库</div></a></div></header>
-
- 
 
 
-<div class="navbar top"><div class="navbar-blur"><div class="navbar-container"><nav class="post"><a href="/">近期发布</a><a href="/categories/">分类</a><a href="/tags/">标签</a><a class="active" href="/archives/">归档</a></nav></div></div></div><div class="post-list archives"><article class="" id="archive"><div class='archive-header h4'>2026</div><div class="archive-list"><a class='post fs14' href="/2026/07/04/2607042337/"><time>07-04</time><span>SSH远程操控命令</span></a></div></article></div>
+
+
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a><span class="sep"></span><a class="cap breadcrumb-link" href="/categories/%E6%8A%80%E6%9C%AF%E7%AC%94%E8%AE%B0/">技术笔记</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-07-04T15:35:00.000Z">2026-07-04</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-07-04T15:35:56.000Z">2026-07-04</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>SSH远程操控命令</span></h1>
+        
+      </div>
+    </div>
+    
+  </div>
+  </div><article class="md-text content"><pre><code># 展示当前目录树形（含所有文件）
+
+tree
+
+# 只显示2层目录
+
+tree -L 2
+
+# 跳到飞牛Nas的Docker目录下
+
+cd /vol1/1000/Docker/
+
+# 返回上一级目录
+
+cd ../
+
+# 列出当前目录文件
+
+ls
+
+# 列出当前目录文件(树状图的形式)
+
+tree -L 1
+
+# 创建“临时”文件夹
+
+mkdir 临时
+
+# 删除“临时”文件夹
+
+rm -rf 临时
+
+# 创建“index.php”文件
+
+touch index.php
+
+# 删除“index.php”文件
+
+rm index.php
+
+# 查看“index.php”文件内容
+
+cat index.php
+
+# 进入“index.php”文件内，编辑内容“第一行：2026……”并保存
+
+echo &quot;第一行：2026
+
+第二行：万事大吉
+
+第三行：刘郎&quot; &gt; index.php
+
+# 在“index.php”文件内添加新内容(不会覆盖前面的内容)，并保存
+
+echo &quot;第四行：vjocc
+
+第五行：你好
+
+第六行：好的&quot; &gt;&gt; index.php
+
+# 进入index.php文件内（编辑模式）
+
+vim index.php
+
+按“ i ”键开始编辑
+
+按“ Esc ”退出编辑
+
+按“ :wq ”回车，保存并退出
+
+# 切换为root管理员(输入正确密码回车即可)
+
+sudo -i
+
+# 退出root管理员权限 (用完 sudo -i 一定要 exit 退出root，避免误删系统文件)
+
+exit
+
+# 查看 index.php 文件的具体路径
+
+realpath index.php
+
+……………………………………………………
+
+备注：2026.07.01创建
+</code></pre>
+</article>
+
+
+
+
+
+
+
+
+
 <footer class="page-footer footnote"><hr><div class="text"><p>该项目库由“<a href="https://vjo.cc" target="_blank" rel="noopener noreferrer">刘郎阁</a>”维护。</p>
 </div></footer>
 <div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"></aside><div class='float-panel'>
@@ -85,7 +203,7 @@
 
 <script type="text/javascript">
   window.canonical = {"closeEnable":true,"closeText":"关闭提示","originalHost":null,"officialHosts":["localhost"],"encoded":""};
-  window.canonical["param"] = {"permalink":null,"checklink":"/js/plugins/video.js"};
+  window.canonical["param"] = {"permalink":"http://example.com/2026/07/04/2607042337/","checklink":"/js/plugins/video.js"};
   // Fix: Ensure page is at the correct top position on data load
   if (history.scrollRestoration) {
     history.scrollRestoration = 'auto';
