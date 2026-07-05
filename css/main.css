@@ -33,6 +33,46 @@
 :root {
   --gap-max: calc(var(--gap-margin) + var(--gap-padding));
 }
+.search-highlight {
+  background: #ffeb3b;
+  padding: 0 3px;
+  border-radius: 3px;
+}
+.search-highlight-first {
+  animation: highlightFlash 1s ease-in-out 2;
+}
+@-moz-keyframes highlightFlash {
+  0%, 100% {
+    background: #ffeb3b;
+  }
+  50% {
+    background: #ff9800;
+  }
+}
+@-webkit-keyframes highlightFlash {
+  0%, 100% {
+    background: #ffeb3b;
+  }
+  50% {
+    background: #ff9800;
+  }
+}
+@-o-keyframes highlightFlash {
+  0%, 100% {
+    background: #ffeb3b;
+  }
+  50% {
+    background: #ff9800;
+  }
+}
+@keyframes highlightFlash {
+  0%, 100% {
+    background: #ffeb3b;
+  }
+  50% {
+    background: #ff9800;
+  }
+}
 :root {
   --hue: 192deg;
   --sat: 98%;
