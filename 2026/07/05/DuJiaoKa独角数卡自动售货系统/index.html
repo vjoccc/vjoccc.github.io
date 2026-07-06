@@ -17,22 +17,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>Docker项目库</title>
+  <title>DuJiaoKa独角数卡自动售货系统 - Docker项目库</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Docker项目库">
-<meta property="og:url" content="http://example.com/">
+    <meta name="description" content="一套基于 Laravel 8.x 与 Dcat Admin 构建的开源自托管数字商品自动售货系统，采用经典三层架构与 Composer 依赖管理，内置支付宝、微信、PayPal、Stripe 等十余种支付接口，支持卡密发货、会员订阅、库存预警及订单加密签名；后台提供一键 CRUD、报表统计、模板切换与多语言包，前端响应式 Bootstrap 界面可深度自定义。 系统通过 Redis 缓存与异步队列">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DuJiaoKa独角数卡自动售货系统">
+<meta property="og:url" content="http://example.com/2026/07/05/DuJiaoKa%E7%8B%AC%E8%A7%92%E6%95%B0%E5%8D%A1%E8%87%AA%E5%8A%A8%E5%94%AE%E8%B4%A7%E7%B3%BB%E7%BB%9F/">
 <meta property="og:site_name" content="Docker项目库">
+<meta property="og:description" content="一套基于 Laravel 8.x 与 Dcat Admin 构建的开源自托管数字商品自动售货系统，采用经典三层架构与 Composer 依赖管理，内置支付宝、微信、PayPal、Stripe 等十余种支付接口，支持卡密发货、会员订阅、库存预警及订单加密签名；后台提供一键 CRUD、报表统计、模板切换与多语言包，前端响应式 Bootstrap 界面可深度自定义。 系统通过 Redis 缓存与异步队列">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/logo.png">
+<meta property="article:published_time" content="2026-07-04T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-07-06T02:58:10.000Z">
 <meta property="article:author" content="刘郎">
+<meta property="article:tag" content="售货">
+<meta property="article:tag" content="独角数卡">
+<meta property="article:tag" content="系统">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/logo.png">
   
   
   
-  
+  <meta name="keywords" content="售货,系统,独角数卡">
 
   <!-- feed -->
   
@@ -46,7 +53,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"http://example.com","author":{"@type":"Person","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png"},"name":"Docker项目库","description":"","url":"http://example.com"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png"},"dateCreated":"2026-07-05T00:00:00+08:00","dateModified":"2026-07-06T10:58:10+08:00","datePublished":"2026-07-05T00:00:00+08:00","description":"","headline":"DuJiaoKa独角数卡自动售货系统","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2026/07/05/DuJiaoKa%E7%8B%AC%E8%A7%92%E6%95%B0%E5%8D%A1%E8%87%AA%E5%8A%A8%E5%94%AE%E8%B4%A7%E7%B3%BB%E7%BB%9F/"},"publisher":{"@type":"Organization","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png","logo":{"@type":"ImageObject","url":"http://example.com/images/logo.png"}},"url":"http://example.com/2026/07/05/DuJiaoKa%E7%8B%AC%E8%A7%92%E6%95%B0%E5%8D%A1%E8%87%AA%E5%8A%A8%E5%94%AE%E8%B4%A7%E7%B3%BB%E7%BB%9F/","keywords":"售货, 系统, 独角数卡","image":[]}</script>
   
 </head>
 <!-- 搜索关键词高亮 + 自动滚动到首个匹配位置 -->
@@ -142,7 +149,7 @@ document.addEventListener('pjax:complete', () => {
   const kw = getUrlSearchWord()
   renderKeywordHighlight(kw)
 })
-</script><body><div id="l_cover"></div><div class="l_body index" id="start" layout="undefined" type="undefined" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+</script><body><div id="l_cover"></div><div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/images/logo.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Docker项目库</div></a></div></header>
@@ -176,50 +183,85 @@ resultWrap?.addEventListener('click', function (e) {
   }
 })
 </script>
+
+
 <widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/07/06/Mazanoke%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/"><span class="title">Mazanoke图像压缩工具</span></a><a class="item title" href="/2026/07/06/PicSmaller%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/"><span class="title">PicSmaller图片压缩工具</span></a><a class="item title" href="/2026/07/06/Music-Tag-Web%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90%E5%88%AE%E5%89%8A%E5%B7%A5%E5%85%B7/"><span class="title">Music-Tag-Web音乐资源刮削工具</span></a><a class="item title" href="/2026/07/06/Navidrome%E5%9C%A8%E7%BA%BF%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="title">Navidrome在线音乐管理工具</span></a><a class="item title" href="/2026/07/06/ZFile%E4%B8%AA%E4%BA%BA%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"><span class="title">ZFile个人文件管理系统</span></a><a class="item title" href="/2026/07/06/Quark-AutoSave%E5%A4%B8%E5%85%8B%E7%BD%91%E7%9B%98%E8%87%AA%E5%8A%A8%E8%BD%AC%E5%AD%98%E5%B7%A5%E5%85%B7/"><span class="title">Quark-AutoSave夸克网盘自动转存工具</span></a><a class="item title" href="/2026/07/06/FileCodeBox%E5%8C%BF%E5%90%8D%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%88%86%E4%BA%AB%E5%B7%A5%E5%85%B7/"><span class="title">FileCodeBox匿名文件快速分享工具</span></a><a class="item title" href="/2026/07/06/GoPeed%E5%85%A8%E5%B9%B3%E5%8F%B0%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/"><span class="title">GoPeed全平台下载工具</span></a><a class="item title" href="/2026/07/05/Oasis%E6%9E%81%E7%AE%80%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="title">Oasis极简文件管理工具</span></a><a class="item title" href="/2026/07/06/WebOS%E4%BA%91%E7%AB%AF%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="title">WebOS云端文件管理工具</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/images/logo.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Docker项目库</div></a></div></header>
 
 
 
 
-<div class="navbar top"><div class="navbar-blur"><div class="navbar-container"><nav class="post"><a class="active" href="/">近期发布</a><a href="/tags/">标签</a><a href="/archives/">归档</a></nav></div></div></div>
-<div class="post-list post"><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/GoPeed%E5%85%A8%E5%B9%B3%E5%8F%B0%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">GoPeed全平台下载工具</h2><div class="excerpt"><p>一款基于 Go 与 Flutter 构建的开源全平台下载管理器，支持 HTTP &#x2F; HTTPS、BitTorrent、Magnet 等主流协议，并内置多线程、断点续传、智能 Tracker 更新与 DHT &#x2F; PEX &#x2F;...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/FileCodeBox%E5%8C%BF%E5%90%8D%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%88%86%E4%BA%AB%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">FileCodeBox匿名文件快速分享工具</h2><div class="excerpt"><p>一款基于 FastAPI＋Vue3 的开源“文件快递柜”，主打“匿名口令、随存随取”。上传者无需注册即可拖放文件或粘贴文本，系统自动生成随机提取码；接收者凭码取件，全程无账号、无痕迹。
-后台可设定有效期与下载次数，到期自动清理，并支持 IP 限速、错...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/Mazanoke%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">Mazanoke图像压缩工具</h2><div class="excerpt"><p>一款基于浏览器的本地图像压缩与格式转换工具，所有运算在客户端完成，零上传、零跟踪，可一键移除 EXIF 隐私数据。
-它支持 JPG、PNG、WebP、HEIC、AVIF、TIFF、GIF、SVG、ICO 等格式，可自定义质量、目标文件大小与最大宽高，...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/Music-Tag-Web%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90%E5%88%AE%E5%89%8A%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">Music-Tag-Web音乐资源刮削工具</h2><div class="excerpt"><p>一款开源的 Web 端音乐元数据刮削与编辑工具，通过浏览器即可批量整理本地或 NAS 中的音乐库。
-它支持 FLAC、APE、WAV、MP3、M4A 等二十余种格式，内置音频指纹识别、专辑封面下载、歌词匹配、整轨切割、格式转换及繁简转换等功能；即使文...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/Navidrome%E5%9C%A8%E7%BA%BF%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">Navidrome在线音乐管理工具</h2><div class="excerpt"><p>一款开源、纯自托管的音乐流媒体服务器，兼容 Subsonic API 生态，支持 MP3、FLAC、AAC、OGG、Opus 等主流格式，可把任意本地音乐库秒变云端曲库。系统采用 Go 编写，单容器镜像不足 50 MB，内存占用约 20 MB，在树莓...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/PicSmaller%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">PicSmaller图片压缩工具</h2><div class="excerpt"><p>PicSmaller（图小小）是一款基于 Vite + React 的免费开源在线图片压缩工具，采用 WebAssembly 与 Web Worker 在浏览器本地完成 JPEG、PNG、WEBP、AVIF、SVG、GIF 等多格式批量压缩，无需上传...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/Quark-AutoSave%E5%A4%B8%E5%85%8B%E7%BD%91%E7%9B%98%E8%87%AA%E5%8A%A8%E8%BD%AC%E5%AD%98%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">Quark-AutoSave夸克网盘自动转存工具</h2><div class="excerpt"><p>一款面向夸克网盘的开源自托管自动化工具，可一次性完成“签到—转存—整理—通知—刷新媒体库”全流程。它通过 Cookie 登录官方接口，批量监听分享链接，一旦检测到更新即按正则规则重命名并转存至指定目录，自动跳过失效或重复文件；内置多账号、多任务、子目...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/WebOS%E4%BA%91%E7%AB%AF%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">WebOS云端文件管理工具</h2><div class="excerpt"><p>一款国产开源的“网盘挂载 + 私有云”双形态文件管理工具，界面仿 Windows 11，上手零成本。它通过浏览器即可把百度、阿里、OneDrive 等 20 余家网盘直接挂载为本地磁盘，实现“秒传 &#x2F; 满速直传、断点续传、跨盘互拷”等高级玩...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/ZFile%E4%B8%AA%E4%BA%BA%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">
-<article class="md-text"><h2 class="post-title">ZFile个人文件管理系统</h2><div class="excerpt"><p>一款基于 Java 的开源个人网盘程序，可将本地磁盘、S3、OneDrive、SharePoint、Google Drive、阿里云 OSS、腾讯云 COS、七牛、又拍云、FTP&#x2F;SFTP 等分散存储统一挂载到同一 Web 界面，实现“一个...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/05/Bitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">Bitwarden密码管理工具</h2><div class="excerpt"><p>一款开源、跨平台的密码管理工具，采用端到端 AES-256 加密与零知识架构，确保只有用户本人能解密数据。它提供网页、桌面、移动端及主流浏览器扩展，支持一键生成强密码、自动填充、TOTP 双因素认证、密码健康检查与安全共享；企业版可细分权限、共享组织...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-04T16:00:00.000Z">2026-07-05</time></span></div></article>
-</a></div></div>
-
-  <div class='paginator-wrap dis-select'>
-  <span class="extend prev" rel="prev"></span><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"></a>
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-07-04T16:00:00.000Z">2026-07-05</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-07-06T02:58:10.000Z">2026-07-06</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>DuJiaoKa独角数卡自动售货系统</span></h1>
+        
+      </div>
+    </div>
+    
   </div>
+  </div><article class="md-text content"><p>一套基于 Laravel 8.x 与 Dcat Admin 构建的开源自托管数字商品自动售货系统，采用经典三层架构与 Composer 依赖管理，内置支付宝、微信、PayPal、Stripe 等十余种支付接口，支持卡密发货、会员订阅、库存预警及订单加密签名；后台提供一键 CRUD、报表统计、模板切换与多语言包，前端响应式 Bootstrap 界面可深度自定义。</p>
+<p>系统通过 Redis 缓存与异步队列实现高并发性能，配合 Docker-Compose 可在 X86&#x2F;ARM 平台一键部署，代码 MIT 协议完全公开，适合站长快速搭建安全、稳定、低维护的数字商品商城。</p>
+<p><img src="https://vjo.cc/img/2025/10/20/1.png" alt="刘郎阁"></p>
+<p>使用感受：8.8 分</p>
+<p>(此项目为非Docker项目)</p>
+<p>1.一款非常不错的自动售货系统<br>2.整体页面简洁美观<br>3.支持多种支付接口集成，支持多种支付方式，包括但不限于支付宝、微信支付等，方便国内外顾客支付。<br>4.订单处理：系统支持即时订单处理，自动发货，提供顾客即时满意的购物体验。<br>5.独角数卡提供详尽的数据统计功能，能够跟踪和显示总订单数、已完成订单、销售额以及支付方式分布等关键销售指标，能帮助站长更好的了解销售状况。<br>6.支持细粒度的权限管理：通过实施基于角色的访问控制（RBAC），独角数卡允许站长为不同的团队成员设定具体权限，确保每个员工只能访问其职责范围内的信息和操作，加强内部管理和数据安全。<br>7.支持自动发送订单邮件：独角数卡可以配置邮件模板，当顾客成功下单后，系统会自动发送含有产品卡密和详细信息的邮件，可以极大的提高发货效率。<br>8.支持配置优惠码</p>
+<h3 id="独角数卡搭建教程"><a href="#独角数卡搭建教程" class="headerlink" title="独角数卡搭建教程"></a>独角数卡搭建教程</h3><p>1.创建一个新的网站，同时选择创建数据库，PHP版本选择 ≥ 7.4 的版本</p>
+<p>并配置PHP环境（注意，如果在部署此项目时可用内存小于 1GB ,安装可能会报错），点击【软件商店】-&gt;【PHP设置】-&gt;【禁用函数列表】 将以下函数删除：</p>
+<p>putenv，proc_open，pcntl_signal，pcntl_alarm </p>
+<p>再点击【软件商店】-&gt;【PHP设置】-&gt;【安装扩展】，安装以下三个扩展：</p>
+<p>fileinfo、redis、opcache</p>
+<p>2.打开独角卡官方<a href="https://github.com/assimon/dujiaoka/releases" target="_blank">Releases</a></p>
+<p>3.找到Contributors下的Assets，选择一个最新的版本下载</p>
+<p>4.将下载好的文件上传到该网站根目录下并解压</p>
+<p>5.接下来我们点击进入该网站目录，并删掉默认网页文件</p>
+<p>6.解压后，进入dujiaoka文件夹，全选文件，将dujiaoka目录下的全部文件移动到网站根目录，然后删除空白的dujiaoka文件夹</p>
+<p>7.点击我们创建的网站，点击网站目录，设置运行目录为 public 并保存</p>
+<p>8.再点击伪静态，选择laravel5，保存</p>
+<p>9.然后就可以打开我们新创建的网站域名进行配置了，根据我们创建的数据库信息进行配置，MySQL数据库地址和MySQL端口 默认不改动，其他正常填写。</p>
+<p>Redis密码 （默认不填写），其他不动。网站名称自定义填写，网站url填写新创建的域名地址 ，其他可不改动。</p>
+<p>如果使用HTTPS请将后台的HTTPS也打开，即打开根目录的.evn文件，将ADMIN-HTTPS&#x3D;false改为ADMIN-HTTPS&#x3D;true</p>
+<p>10.如果在点击”保存”或者”安装”时提示错误，我们可以自行根据提示的错误进行优化(看第1步的PHP配置)</p>
+<p>11.然后我们就能打开网站了，后台为域名&#x2F;admin，默认账号密码都是admin</p>
+<p>12.网站搭建方面已经完成，接下来要配置守护进程，步骤：【软件商店】-&gt;【Supervisor设置】-&gt;【添加守护进程】</p>
+<p>13.守护进程信息填写：</p>
+<p>名称：随意填写</p>
+<p>启动用户：选择www</p>
+<p>运行目录：选择程序根目录</p>
+<p>启动命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">源码文件位置+artisan queue:work</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">例如：/www/server/php/你的php版本/bin/php /www/wwwroot/你的网站根目录/artisan queue:work</span><br></pre></td></tr></table></figure>
+
+<p>注意：正式上线后一定要将.env配置里面的APP_DEBUG设置为false ，配置邮件需要重启supervisor所添加的进程</p>
+<p><a href="https://github.com/assimon/dujiaoka" target="_blank">DuJiaoKa项目地址</a></p>
+</article>
+
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">上一篇</div><a href="/2026/07/05/Dpanel%E5%8F%AF%E8%A7%86%E5%8C%96Docker%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">Dpanel可视化Docker管理工具</a></div><div class="item" id="next"><div class="note">下一篇</div><a href="/2026/07/05/Dockge%20Docker%E5%8F%AF%E8%A7%86%E5%8C%96%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">Dockge Docker可视化管理工具</a></div></section></div>
+
+
+
+
 
 
 <footer class="page-footer footnote"><hr><div class="text"><p>该项目库由“<a href="https://vjo.cc" target="_blank" rel="noopener noreferrer">刘郎阁</a>”维护。</p>
 </div></footer>
-<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"></aside><div class='float-panel'>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><div class="widgets">
+
+
+
+<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%8B%AC%E8%A7%92%E6%95%B0%E5%8D%A1%E6%90%AD%E5%BB%BA%E6%95%99%E7%A8%8B"><span class="toc-text">独角数卡搭建教程</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
+</div></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
@@ -232,7 +274,7 @@ resultWrap?.addEventListener('click', function (e) {
 
 <script type="text/javascript">
   window.canonical = {"closeEnable":true,"closeText":"关闭提示","originalHost":null,"officialHosts":["localhost"],"encoded":""};
-  window.canonical["param"] = {"permalink":null,"checklink":"/js/plugins/video.js"};
+  window.canonical["param"] = {"permalink":"http://example.com/2026/07/05/DuJiaoKa%E7%8B%AC%E8%A7%92%E6%95%B0%E5%8D%A1%E8%87%AA%E5%8A%A8%E5%94%AE%E8%B4%A7%E7%B3%BB%E7%BB%9F/","checklink":"/js/plugins/video.js"};
   // Fix: Ensure page is at the correct top position on data load
   if (history.scrollRestoration) {
     history.scrollRestoration = 'auto';

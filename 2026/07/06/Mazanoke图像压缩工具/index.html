@@ -17,22 +17,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>Docker项目库</title>
+  <title>Mazanoke图像压缩工具 - Docker项目库</title>
 
   
-    <meta property="og:type" content="website">
-<meta property="og:title" content="Docker项目库">
-<meta property="og:url" content="http://example.com/">
+    <meta name="description" content="一款基于浏览器的本地图像压缩与格式转换工具，所有运算在客户端完成，零上传、零跟踪，可一键移除 EXIF 隐私数据。 它支持 JPG、PNG、WebP、HEIC、AVIF、TIFF、GIF、SVG、ICO 等格式，可自定义质量、目标文件大小与最大宽高，批量处理完成后打包 ZIP 下载；同时提供 PWA 安装与 Docker 镜像，镜像 &lt; 30 MB，内存占用 ≈ 20 MB，部署后通过浏览器">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Mazanoke图像压缩工具">
+<meta property="og:url" content="http://example.com/2026/07/06/Mazanoke%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/">
 <meta property="og:site_name" content="Docker项目库">
+<meta property="og:description" content="一款基于浏览器的本地图像压缩与格式转换工具，所有运算在客户端完成，零上传、零跟踪，可一键移除 EXIF 隐私数据。 它支持 JPG、PNG、WebP、HEIC、AVIF、TIFF、GIF、SVG、ICO 等格式，可自定义质量、目标文件大小与最大宽高，批量处理完成后打包 ZIP 下载；同时提供 PWA 安装与 Docker 镜像，镜像 &lt; 30 MB，内存占用 ≈ 20 MB，部署后通过浏览器">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/logo.png">
+<meta property="article:published_time" content="2026-07-05T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-07-06T03:25:40.000Z">
 <meta property="article:author" content="刘郎">
+<meta property="article:tag" content="压缩">
+<meta property="article:tag" content="图像">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/logo.png">
   
   
   
-  
+  <meta name="keywords" content="图像,压缩">
 
   <!-- feed -->
   
@@ -46,7 +52,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Website","@id":"http://example.com","author":{"@type":"Person","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png"},"name":"Docker项目库","description":"","url":"http://example.com"}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png"},"dateCreated":"2026-07-06T00:00:00+08:00","dateModified":"2026-07-06T11:25:40+08:00","datePublished":"2026-07-06T00:00:00+08:00","description":"","headline":"Mazanoke图像压缩工具","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2026/07/06/Mazanoke%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/"},"publisher":{"@type":"Organization","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png","logo":{"@type":"ImageObject","url":"http://example.com/images/logo.png"}},"url":"http://example.com/2026/07/06/Mazanoke%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/","keywords":"图像, 压缩","image":[]}</script>
   
 </head>
 <!-- 搜索关键词高亮 + 自动滚动到首个匹配位置 -->
@@ -142,7 +148,7 @@ document.addEventListener('pjax:complete', () => {
   const kw = getUrlSearchWord()
   renderKeywordHighlight(kw)
 })
-</script><body><div id="l_cover"></div><div class="l_body index" id="start" layout="undefined" type="undefined" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
+</script><body><div id="l_cover"></div><div class="l_body content" id="start" layout="post" type="tech" ><aside class="l_left"><div class="sidebg"></div><div class="leftbar-container">
 
 
 <header class="header"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/images/logo.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Docker项目库</div></a></div></header>
@@ -176,45 +182,47 @@ resultWrap?.addEventListener('click', function (e) {
   }
 })
 </script>
+
+
 <widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/07/06/Mazanoke%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/"><span class="title">Mazanoke图像压缩工具</span></a><a class="item title" href="/2026/07/06/PicSmaller%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/"><span class="title">PicSmaller图片压缩工具</span></a><a class="item title" href="/2026/07/06/Music-Tag-Web%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90%E5%88%AE%E5%89%8A%E5%B7%A5%E5%85%B7/"><span class="title">Music-Tag-Web音乐资源刮削工具</span></a><a class="item title" href="/2026/07/06/Navidrome%E5%9C%A8%E7%BA%BF%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="title">Navidrome在线音乐管理工具</span></a><a class="item title" href="/2026/07/06/ZFile%E4%B8%AA%E4%BA%BA%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/"><span class="title">ZFile个人文件管理系统</span></a><a class="item title" href="/2026/07/06/Quark-AutoSave%E5%A4%B8%E5%85%8B%E7%BD%91%E7%9B%98%E8%87%AA%E5%8A%A8%E8%BD%AC%E5%AD%98%E5%B7%A5%E5%85%B7/"><span class="title">Quark-AutoSave夸克网盘自动转存工具</span></a><a class="item title" href="/2026/07/06/FileCodeBox%E5%8C%BF%E5%90%8D%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%88%86%E4%BA%AB%E5%B7%A5%E5%85%B7/"><span class="title">FileCodeBox匿名文件快速分享工具</span></a><a class="item title" href="/2026/07/06/GoPeed%E5%85%A8%E5%B9%B3%E5%8F%B0%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/"><span class="title">GoPeed全平台下载工具</span></a><a class="item title" href="/2026/07/05/Oasis%E6%9E%81%E7%AE%80%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="title">Oasis极简文件管理工具</span></a><a class="item title" href="/2026/07/06/WebOS%E4%BA%91%E7%AB%AF%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="title">WebOS云端文件管理工具</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
 
-<header class="header mobile-only"><div class="logo-wrap"><a class="avatar" href="/"><div class="bg" style="opacity:0;background-image:url(https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/avatar/round/rainbow64@3x.webp);"></div><img no-lazy class="avatar" src="/images/logo.png" onerror="javascript:this.classList.add('error');this.src='https://gcore.jsdelivr.net/gh/cdn-x/placeholder@1.0.12/image/2659360.svg';"></a><a class="title" href="/"><div class="main">Docker项目库</div></a></div></header>
 
 
 
 
-<div class="navbar top"><div class="navbar-blur"><div class="navbar-container"><nav class="post"><a class="active" href="/">近期发布</a><a href="/tags/">标签</a><a href="/archives/">归档</a></nav></div></div></div>
-<div class="post-list post"><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/GoPeed%E5%85%A8%E5%B9%B3%E5%8F%B0%E4%B8%8B%E8%BD%BD%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">GoPeed全平台下载工具</h2><div class="excerpt"><p>一款基于 Go 与 Flutter 构建的开源全平台下载管理器，支持 HTTP &#x2F; HTTPS、BitTorrent、Magnet 等主流协议，并内置多线程、断点续传、智能 Tracker 更新与 DHT &#x2F; PEX &#x2F;...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/FileCodeBox%E5%8C%BF%E5%90%8D%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%88%86%E4%BA%AB%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">FileCodeBox匿名文件快速分享工具</h2><div class="excerpt"><p>一款基于 FastAPI＋Vue3 的开源“文件快递柜”，主打“匿名口令、随存随取”。上传者无需注册即可拖放文件或粘贴文本，系统自动生成随机提取码；接收者凭码取件，全程无账号、无痕迹。
-后台可设定有效期与下载次数，到期自动清理，并支持 IP 限速、错...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/Mazanoke%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">Mazanoke图像压缩工具</h2><div class="excerpt"><p>一款基于浏览器的本地图像压缩与格式转换工具，所有运算在客户端完成，零上传、零跟踪，可一键移除 EXIF 隐私数据。
-它支持 JPG、PNG、WebP、HEIC、AVIF、TIFF、GIF、SVG、ICO 等格式，可自定义质量、目标文件大小与最大宽高，...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/Music-Tag-Web%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90%E5%88%AE%E5%89%8A%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">Music-Tag-Web音乐资源刮削工具</h2><div class="excerpt"><p>一款开源的 Web 端音乐元数据刮削与编辑工具，通过浏览器即可批量整理本地或 NAS 中的音乐库。
-它支持 FLAC、APE、WAV、MP3、M4A 等二十余种格式，内置音频指纹识别、专辑封面下载、歌词匹配、整轨切割、格式转换及繁简转换等功能；即使文...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/Navidrome%E5%9C%A8%E7%BA%BF%E9%9F%B3%E4%B9%90%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">Navidrome在线音乐管理工具</h2><div class="excerpt"><p>一款开源、纯自托管的音乐流媒体服务器，兼容 Subsonic API 生态，支持 MP3、FLAC、AAC、OGG、Opus 等主流格式，可把任意本地音乐库秒变云端曲库。系统采用 Go 编写，单容器镜像不足 50 MB，内存占用约 20 MB，在树莓...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/PicSmaller%E5%9B%BE%E7%89%87%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">PicSmaller图片压缩工具</h2><div class="excerpt"><p>PicSmaller（图小小）是一款基于 Vite + React 的免费开源在线图片压缩工具，采用 WebAssembly 与 Web Worker 在浏览器本地完成 JPEG、PNG、WEBP、AVIF、SVG、GIF 等多格式批量压缩，无需上传...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/Quark-AutoSave%E5%A4%B8%E5%85%8B%E7%BD%91%E7%9B%98%E8%87%AA%E5%8A%A8%E8%BD%AC%E5%AD%98%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">Quark-AutoSave夸克网盘自动转存工具</h2><div class="excerpt"><p>一款面向夸克网盘的开源自托管自动化工具，可一次性完成“签到—转存—整理—通知—刷新媒体库”全流程。它通过 Cookie 登录官方接口，批量监听分享链接，一旦检测到更新即按正则规则重命名并转存至指定目录，自动跳过失效或重复文件；内置多账号、多任务、子目...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/WebOS%E4%BA%91%E7%AB%AF%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">WebOS云端文件管理工具</h2><div class="excerpt"><p>一款国产开源的“网盘挂载 + 私有云”双形态文件管理工具，界面仿 Windows 11，上手零成本。它通过浏览器即可把百度、阿里、OneDrive 等 20 余家网盘直接挂载为本地磁盘，实现“秒传 &#x2F; 满速直传、断点续传、跨盘互拷”等高级玩...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/06/ZFile%E4%B8%AA%E4%BA%BA%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F/">
-<article class="md-text"><h2 class="post-title">ZFile个人文件管理系统</h2><div class="excerpt"><p>一款基于 Java 的开源个人网盘程序，可将本地磁盘、S3、OneDrive、SharePoint、Google Drive、阿里云 OSS、腾讯云 COS、七牛、又拍云、FTP&#x2F;SFTP 等分散存储统一挂载到同一 Web 界面，实现“一个...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span></div></article>
-</a></div><div class="post-card-wrap"><a class="post-card post" href="/2026/07/05/Bitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">
-<article class="md-text"><h2 class="post-title">Bitwarden密码管理工具</h2><div class="excerpt"><p>一款开源、跨平台的密码管理工具，采用端到端 AES-256 加密与零知识架构，确保只有用户本人能解密数据。它提供网页、桌面、移动端及主流浏览器扩展，支持一键生成强密码、自动填充、TOTP 双因素认证、密码健康检查与安全共享；企业版可细分权限、共享组织...</p></div><div class="meta cap"><span class="cap" id="post-meta"><svg style="margin-bottom:2px" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="currentColor" d="M6.94 2c.416 0 .753.324.753.724v1.46c.668-.012 1.417-.012 2.26-.012h4.015c.842 0 1.591 0 2.259.013v-1.46c0-.4.337-.725.753-.725s.753.324.753.724V4.25c1.445.111 2.394.384 3.09 1.055c.698.67.982 1.582 1.097 2.972L22 9H2v-.724c.116-1.39.4-2.302 1.097-2.972c.697-.67 1.645-.944 3.09-1.055V2.724c0-.4.337-.724.753-.724"/><path fill="currentColor" d="M22 14v-2c0-.839-.004-2.335-.017-3H2.01c-.013.665-.01 2.161-.01 3v2c0 3.771 0 5.657 1.172 6.828C4.343 22 6.228 22 10 22h4c3.77 0 5.656 0 6.828-1.172C22 19.658 22 17.772 22 14" opacity=".5"/><path fill="currentColor" d="M18 17a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m-5 4a1 1 0 1 1-2 0a1 1 0 0 1 2 0m0-4a1 1 0 1 1-2 0a1 1 0 0 1 2 0"/></svg><time datetime="2026-07-04T16:00:00.000Z">2026-07-05</time></span></div></article>
-</a></div></div>
-
-  <div class='paginator-wrap dis-select'>
-  <span class="extend prev" rel="prev"></span><span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/2/"></a>
+<div class="article banner top">
+  <div class="content">
+    <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
+<span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-07-06T03:25:40.000Z">2026-07-06</time></span></div></div></div>
+    
+    <div class="bottom only-title">
+      
+      <div class="text-area">
+        <h1 class="text title"><span>Mazanoke图像压缩工具</span></h1>
+        
+      </div>
+    </div>
+    
   </div>
+  </div><article class="md-text content"><p>一款基于浏览器的本地图像压缩与格式转换工具，所有运算在客户端完成，零上传、零跟踪，可一键移除 EXIF 隐私数据。</p>
+<p>它支持 JPG、PNG、WebP、HEIC、AVIF、TIFF、GIF、SVG、ICO 等格式，可自定义质量、目标文件大小与最大宽高，批量处理完成后打包 ZIP 下载；同时提供 PWA 安装与 Docker 镜像，镜像 &lt; 30 MB，内存占用 ≈ 20 MB，部署后通过浏览器即可离线使用，是个人与团队在 NAS、VPS 上快速搭建私有“图小小”的轻量级方案 。</p>
+<p><img src="https://vjo.cc/img/2025/7/1/IMG_5088.jpeg" alt="刘郎阁"></p>
+<p>内存占用：4 MB</p>
+<p>使用感受：7分</p>
+<p>1.页面清爽<br>2.不支持中文，全英文页面，但操作简单<br>3.支持批量上传并压缩<br>4.整体压缩效果还行</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">sudo</span> docker run -d \</span><br><span class="line">   --restart unless-stopped \</span><br><span class="line">   --name mazanoke \</span><br><span class="line">   -p 3474:80 \</span><br><span class="line">   ghcr.io/civilblur/mazanoke:latest</span><br></pre></td></tr></table></figure>
+</article>
+
+
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">上一篇</div><a href="/2026/07/06/FileCodeBox%E5%8C%BF%E5%90%8D%E6%96%87%E4%BB%B6%E5%BF%AB%E9%80%9F%E5%88%86%E4%BA%AB%E5%B7%A5%E5%85%B7/">FileCodeBox匿名文件快速分享工具</a></div><div class="item" id="next"><div class="note">下一篇</div><a href="/2026/07/06/Music-Tag-Web%E9%9F%B3%E4%B9%90%E8%B5%84%E6%BA%90%E5%88%AE%E5%89%8A%E5%B7%A5%E5%85%B7/">Music-Tag-Web音乐资源刮削工具</a></div></section></div>
+
+
+
+
 
 
 <footer class="page-footer footnote"><hr><div class="text"><p>该项目库由“<a href="https://vjo.cc" target="_blank" rel="noopener noreferrer">刘郎阁</a>”维护。</p>
@@ -232,7 +240,7 @@ resultWrap?.addEventListener('click', function (e) {
 
 <script type="text/javascript">
   window.canonical = {"closeEnable":true,"closeText":"关闭提示","originalHost":null,"officialHosts":["localhost"],"encoded":""};
-  window.canonical["param"] = {"permalink":null,"checklink":"/js/plugins/video.js"};
+  window.canonical["param"] = {"permalink":"http://example.com/2026/07/06/Mazanoke%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/","checklink":"/js/plugins/video.js"};
   // Fix: Ensure page is at the correct top position on data load
   if (history.scrollRestoration) {
     history.scrollRestoration = 'auto';
