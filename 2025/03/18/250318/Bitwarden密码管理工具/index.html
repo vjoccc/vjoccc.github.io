@@ -17,29 +17,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000">
   <meta name="theme-color" content="#f9fafb">
-  <title>Xnote个人笔记兼知识库系统 - Docker项目库</title>
+  <title>Bitwarden密码管理工具 - Docker项目库</title>
 
   
-    <meta name="description" content="Xnote是面向个人的轻量级笔记兼知识库系统，主打数据自托管、多格式笔记、内置工具箱与跨平台部署，适配追求数据掌控和自定义需求的用户。  它以个人使用为核心，支持小规模多用户协作，能一站式管理笔记、提醒、文件与任务，还可通过插件扩展功能。编辑器兼容Markdown和富文本，支持分组标签、全文搜索、分享与权限隔离；任务提醒涵盖多类型内容，搭配基础日历；文件管理支持多视图与各类操作，还能统计代码行、调">
+    <meta name="description" content="一款开源、跨平台的密码管理工具，采用端到端 AES-256 加密与零知识架构，确保只有用户本人能解密数据。它提供网页、桌面、移动端及主流浏览器扩展，支持一键生成强密码、自动填充、TOTP 双因素认证、密码健康检查与安全共享；企业版可细分权限、共享组织库。 数据可托管官方云，也可通过 Docker 自部署，满足合规与隐私需求，并支持从 1Password、LastPass 等批量导入，实现无缝迁移">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Xnote个人笔记兼知识库系统">
-<meta property="og:url" content="http://example.com/2026/07/06/260706/Xnote%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%E5%85%BC%E7%9F%A5%E8%AF%86%E5%BA%93%E7%B3%BB%E7%BB%9F/">
+<meta property="og:title" content="Bitwarden密码管理工具">
+<meta property="og:url" content="http://example.com/2025/03/18/250318/Bitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">
 <meta property="og:site_name" content="Docker项目库">
-<meta property="og:description" content="Xnote是面向个人的轻量级笔记兼知识库系统，主打数据自托管、多格式笔记、内置工具箱与跨平台部署，适配追求数据掌控和自定义需求的用户。  它以个人使用为核心，支持小规模多用户协作，能一站式管理笔记、提醒、文件与任务，还可通过插件扩展功能。编辑器兼容Markdown和富文本，支持分组标签、全文搜索、分享与权限隔离；任务提醒涵盖多类型内容，搭配基础日历；文件管理支持多视图与各类操作，还能统计代码行、调">
+<meta property="og:description" content="一款开源、跨平台的密码管理工具，采用端到端 AES-256 加密与零知识架构，确保只有用户本人能解密数据。它提供网页、桌面、移动端及主流浏览器扩展，支持一键生成强密码、自动填充、TOTP 双因素认证、密码健康检查与安全共享；企业版可细分权限、共享组织库。 数据可托管官方云，也可通过 Docker 自部署，满足合规与隐私需求，并支持从 1Password、LastPass 等批量导入，实现无缝迁移">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://example.com/images/logo.png">
-<meta property="article:published_time" content="2026-07-05T16:00:00.000Z">
-<meta property="article:modified_time" content="2026-07-06T04:35:21.000Z">
+<meta property="article:published_time" content="2025-03-17T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-07-06T04:45:23.000Z">
 <meta property="article:author" content="刘郎">
-<meta property="article:tag" content="知识库">
-<meta property="article:tag" content="笔记">
-<meta property="article:tag" content="系统">
+<meta property="article:tag" content="安全">
+<meta property="article:tag" content="密码">
+<meta property="article:tag" content="管理">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://example.com/images/logo.png">
   
   
   
-  <meta name="keywords" content="系统,笔记,知识库">
+  <meta name="keywords" content="密码,管理,安全">
 
   <!-- feed -->
   
@@ -53,7 +53,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png"},"dateCreated":"2026-07-06T00:00:00+08:00","dateModified":"2026-07-06T12:35:21+08:00","datePublished":"2026-07-06T00:00:00+08:00","description":"","headline":"Xnote个人笔记兼知识库系统","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2026/07/06/260706/Xnote%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%E5%85%BC%E7%9F%A5%E8%AF%86%E5%BA%93%E7%B3%BB%E7%BB%9F/"},"publisher":{"@type":"Organization","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png","logo":{"@type":"ImageObject","url":"http://example.com/images/logo.png"}},"url":"http://example.com/2026/07/06/260706/Xnote%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%E5%85%BC%E7%9F%A5%E8%AF%86%E5%BA%93%E7%B3%BB%E7%BB%9F/","keywords":"系统, 笔记, 知识库","image":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png"},"dateCreated":"2025-03-18T00:00:00+08:00","dateModified":"2026-07-06T12:45:23+08:00","datePublished":"2025-03-18T00:00:00+08:00","description":"","headline":"Bitwarden密码管理工具","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/03/18/250318/Bitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"},"publisher":{"@type":"Organization","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png","logo":{"@type":"ImageObject","url":"http://example.com/images/logo.png"}},"url":"http://example.com/2025/03/18/250318/Bitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/","keywords":"密码, 管理, 安全","image":[]}</script>
   
 </head>
 <!-- 搜索关键词高亮 + 自动滚动到首个匹配位置 -->
@@ -185,7 +185,7 @@ resultWrap?.addEventListener('click', function (e) {
 </script>
 
 
-<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/07/06/260706/Rmoments%E5%A4%9A%E7%94%A8%E6%88%B7%E6%9E%81%E7%AE%80%E6%9C%8B%E5%8F%8B%E5%9C%88/"><span class="title">Rmoments多用户极简朋友圈</span></a><a class="item title" href="/2026/07/06/260706/Drawnix%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E7%99%BD%E6%9D%BF%E5%B7%A5%E5%85%B7/"><span class="title">Drawnix流程图思维导图白板工具</span></a><a class="item title" href="/2026/07/06/260706/Xnote%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%E5%85%BC%E7%9F%A5%E8%AF%86%E5%BA%93%E7%B3%BB%E7%BB%9F/"><span class="title">Xnote个人笔记兼知识库系统</span></a><a class="item title" href="/2026/07/06/260706/Fiora%E7%A7%81%E4%BA%BA%E8%81%8A%E5%A4%A9%E5%AE%A4/"><span class="title">Fiora私人聊天室</span></a><a class="item title" href="/2026/07/06/260706/Game2048%E5%9C%A8%E7%BA%BF%E7%BD%91%E9%A1%B5%E5%B0%8F%E6%B8%B8%E6%88%8F/"><span class="title">Game2048在线网页小游戏</span></a><a class="item title" href="/2026/07/06/260706/Notepad%E4%B8%AA%E4%BA%BA%E4%B8%B4%E6%97%B6%E8%AE%B0%E4%BA%8B%E6%9C%AC%E5%B7%A5%E5%85%B7/"><span class="title">Notepad个人临时记事本工具</span></a><a class="item title" href="/2026/07/06/260706/HivisionIDPhotos%E8%AF%81%E4%BB%B6%E7%85%A7%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/"><span class="title">HivisionIDPhotos证件照生成工具</span></a><a class="item title" href="/2026/07/06/260706/Speedtest-x%E5%9C%A8%E7%BA%BF%E6%B5%8B%E9%80%9F%E5%B7%A5%E5%85%B7/"><span class="title">Speedtest-x在线测速工具</span></a><a class="item title" href="/2026/07/06/260706/Jellyfin%E4%B8%AA%E4%BA%BA%E5%BD%B1%E8%A7%86%E5%BA%93/"><span class="title">Jellyfin个人影视库</span></a><a class="item title" href="/2026/07/06/260706/GoDoos%E8%BD%BB%E9%87%8F%E5%86%85%E7%BD%91%E5%8A%9E%E5%85%AC%E7%B3%BB%E7%BB%9F/"><span class="title">GoDoos轻量内网办公系统</span></a></div></widget>
+<widget class="widget-wrapper recent post-list"><div class="widget-header dis-select"><span class="name">最近更新</span></div><div class="widget-body fs14"><a class="item title" href="/2026/07/06/260706/SyncTV%E5%AE%B6%E5%BA%AD%E5%BD%B1%E9%99%A2%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%90%8C%E6%AD%A5%E8%A7%82%E5%BD%B1/"><span class="title">SyncTV家庭影院跨设备同步观影</span></a><a class="item title" href="/2025/03/18/250318/Xnote%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%E5%85%BC%E7%9F%A5%E8%AF%86%E5%BA%93%E7%B3%BB%E7%BB%9F/"><span class="title">Xnote个人笔记兼知识库系统</span></a><a class="item title" href="/2025/03/18/250318/Bitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/"><span class="title">Bitwarden密码管理工具</span></a><a class="item title" href="/2026/07/06/260706/Rmoments%E5%A4%9A%E7%94%A8%E6%88%B7%E6%9E%81%E7%AE%80%E6%9C%8B%E5%8F%8B%E5%9C%88/"><span class="title">Rmoments多用户极简朋友圈</span></a><a class="item title" href="/2026/07/06/260706/Drawnix%E6%B5%81%E7%A8%8B%E5%9B%BE%E6%80%9D%E7%BB%B4%E5%AF%BC%E5%9B%BE%E7%99%BD%E6%9D%BF%E5%B7%A5%E5%85%B7/"><span class="title">Drawnix流程图思维导图白板工具</span></a><a class="item title" href="/2026/07/06/260706/Fiora%E7%A7%81%E4%BA%BA%E8%81%8A%E5%A4%A9%E5%AE%A4/"><span class="title">Fiora私人聊天室</span></a><a class="item title" href="/2026/07/06/260706/Game2048%E5%9C%A8%E7%BA%BF%E7%BD%91%E9%A1%B5%E5%B0%8F%E6%B8%B8%E6%88%8F/"><span class="title">Game2048在线网页小游戏</span></a><a class="item title" href="/2026/07/06/260706/Notepad%E4%B8%AA%E4%BA%BA%E4%B8%B4%E6%97%B6%E8%AE%B0%E4%BA%8B%E6%9C%AC%E5%B7%A5%E5%85%B7/"><span class="title">Notepad个人临时记事本工具</span></a><a class="item title" href="/2026/07/06/260706/HivisionIDPhotos%E8%AF%81%E4%BB%B6%E7%85%A7%E7%94%9F%E6%88%90%E5%B7%A5%E5%85%B7/"><span class="title">HivisionIDPhotos证件照生成工具</span></a><a class="item title" href="/2026/07/06/260706/Speedtest-x%E5%9C%A8%E7%BA%BF%E6%B5%8B%E9%80%9F%E5%B7%A5%E5%85%B7/"><span class="title">Speedtest-x在线测速工具</span></a></div></widget>
 </div>
 
 </div></aside><div class="l_main" id="main">
@@ -198,38 +198,34 @@ resultWrap?.addEventListener('click', function (e) {
   <div class="content">
     <div class="top bread-nav footnote"><div class="left"><div class="flex-row" id="breadcrumb"><a class="cap breadcrumb" href="/">主页</a>
 <span class="sep"></span><a class="cap breadcrumb" href="/">文章</a></div>
-<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2026-07-05T16:00:00.000Z">2026-07-06</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-07-06T04:35:21.000Z">2026-07-06</time></span></div></div></div>
+<div class="flex-row" id="post-meta"><span class="text created">发布于：<time datetime="2025-03-17T16:00:00.000Z">2025-03-18</time></span><span class="sep updated"></span><span class="text updated">更新于：<time datetime="2026-07-06T04:45:23.000Z">2026-07-06</time></span></div></div></div>
     
     <div class="bottom only-title">
       
       <div class="text-area">
-        <h1 class="text title"><span>Xnote个人笔记兼知识库系统</span></h1>
+        <h1 class="text title"><span>Bitwarden密码管理工具</span></h1>
         
       </div>
     </div>
     
   </div>
-  </div><article class="md-text content"><!--markdown-->Xnote是面向个人的轻量级笔记兼知识库系统，主打数据自托管、多格式笔记、内置工具箱与跨平台部署，适配追求数据掌控和自定义需求的用户。
+  </div><article class="md-text content"><p>一款开源、跨平台的密码管理工具，采用端到端 AES-256 加密与零知识架构，确保只有用户本人能解密数据。它提供网页、桌面、移动端及主流浏览器扩展，支持一键生成强密码、自动填充、TOTP 双因素认证、密码健康检查与安全共享；企业版可细分权限、共享组织库。</p>
+<p>数据可托管官方云，也可通过 Docker 自部署，满足合规与隐私需求，并支持从 1Password、LastPass 等批量导入，实现无缝迁移 。</p>
+<p><img src="https://vjo.cc/img/2025/6/29/1.png" alt="刘郎阁"></p>
+<p>内存占用：59 MB<br>镜像大小：227 MB</p>
+<p>使用感受：9分</p>
+<p>1.一款功能强大的密码管理工具<br>2.对pc端、移动端都支持</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">version: <span class="string">&quot;2&quot;</span></span><br><span class="line"> </span><br><span class="line">services:</span><br><span class="line">  app:</span><br><span class="line">    image: vaultwarden/server:latest</span><br><span class="line">    environment:</span><br><span class="line">      - SERVER_ADMIN_EMAIL=&lt;xxx@qq.com&gt; <span class="comment"># 提醒邮件按需修改</span></span><br><span class="line">      - SIGNUPS_ALLOWED=<span class="literal">false</span></span><br><span class="line">      - INVITATIONS_ALLOWED=<span class="literal">true</span></span><br><span class="line">      - WEBSOCKET_ENABLED=<span class="literal">true</span></span><br><span class="line">      - ADMIN_TOKEN=&lt;token&gt; <span class="comment"># 按需修改</span></span><br><span class="line">    volumes:</span><br><span class="line">      - ./app:/data/</span><br><span class="line">    ports:</span><br><span class="line">      - 2025:80 <span class="comment"># 按需修改,这里与上方放行的端口对应</span></span><br><span class="line">    restart: unless-stopped</span><br><span class="line">    networks:</span><br><span class="line">      - default</span><br><span class="line"> </span><br><span class="line">networks:</span><br><span class="line">  default:</span><br><span class="line">    name: bitwarden</span><br></pre></td></tr></table></figure>
 
-<p>它以个人使用为核心，支持小规模多用户协作，能一站式管理笔记、提醒、文件与任务，还可通过插件扩展功能。编辑器兼容Markdown和富文本，支持分组标签、全文搜索、分享与权限隔离；任务提醒涵盖多类型内容，搭配基础日历；文件管理支持多视图与各类操作，还能统计代码行、调用WebShell；内置文本处理、编解码等实用工具。</p>
-<p><img src="https://vjo.cc/img/2025/10/10/1.png" alt="刘郎阁"><br><img src="https://vjo.cc/img/2025/10/10/2.png" alt="刘郎阁"></p>
-<p>内存占用：92.72 MB<br>镜像大小：976.72 MB</p>
-<p>使用感受：8.5分</p>
-<p>1.整体页面清爽<br>2.支持Markdown&#x2F;富文本&#x2F;代码片段等多种格式<br>3.内置脚本管理器、代码对比等程序员专属工具<br>4.Web端+移动端自适应，随时随地记录灵感<br>5.通过插件可集成GitHub、钉钉等第三方服务<br>6.支持Dockerfile方式自定义构建镜像部署<br>7.整体使用感受还不错</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">version: <span class="string">&#x27;3&#x27;</span></span><br><span class="line">services:</span><br><span class="line">  xnote:</span><br><span class="line">    image: wbsu2003/xnote:latest</span><br><span class="line">    container_name: xnote</span><br><span class="line">    restart: unless-stopped</span><br><span class="line">    ports:</span><br><span class="line">      - 8882:8882</span><br><span class="line">    volumes:</span><br><span class="line">      - ./data:/data</span><br><span class="line">      - ./config/boot.properties:/config/boot/boot.sae.properties</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">openssl rand -<span class="built_in">base64</span> 48</span><br></pre></td></tr></table></figure>
 
-<p>执行完以上代码后还需在 <code>/项目路径/xnote/config/</code> 目录下添加一个 <code>boot.properties</code> 文件(如果已经存在同名的文件夹，删除并替换掉即可)，并将以下代码复制到其中，然后重新启动该项目：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 单元测试的配置</span></span><br><span class="line">data = ./testdata</span><br><span class="line"></span><br><span class="line">db_driver = sqlite</span><br><span class="line">db_debug = <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># 启用数据库同步</span></span><br><span class="line">sync_db_from_leader = <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">port = 8882</span><br><span class="line"></span><br><span class="line">test_ssdb = <span class="literal">false</span></span><br><span class="line">test_ssdb.type = bool</span><br></pre></td></tr></table></figure>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /root/bitwarden <span class="variable">$work</span> &amp;&amp; docker-compose up -d</span><br></pre></td></tr></table></figure>
 
-<p>初始用户名：admin<br>初始密码：123456</p>
-<h3 id="重试次数过多解决方案"><a href="#重试次数过多解决方案" class="headerlink" title="重试次数过多解决方案"></a>重试次数过多解决方案</h3><p>按以下格式打开相关路径链接，将第11行的“ 3 ”改成“ 9999 ”保存并执行即可：</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">https://部署Xnote项目的域名/code/edit?path=/handlers/user/login.py&amp;key=%E9%87%8D%E8%AF%95%E6%AC%A1%E6%95%B0%E8%BF%87%E5%A4%9A</span><br></pre></td></tr></table></figure>
-
-<p><a href="https://github.com/xupingmao/xnote" target="_blank">Xnote项目地址</a></p>
+<p><a href="https://apps.apple.com/us/app/bitwarden-password-manager/id1137397744" target="_blank"> ios移动端下载地址 </a></p>
 </article>
 
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">上一篇</div><a href="/2026/07/06/260706/Speedtest-x%E5%9C%A8%E7%BA%BF%E6%B5%8B%E9%80%9F%E5%B7%A5%E5%85%B7/">Speedtest-x在线测速工具</a></div><div class="item" id="next"><div class="note">下一篇</div><a href="/2026/07/06/260706/WebOS%E4%BA%91%E7%AB%AF%E6%96%87%E4%BB%B6%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">WebOS云端文件管理工具</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">上一篇</div><a href="/2026/07/06/260706/iT-Tools%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91%E8%80%85%E5%B7%A5%E5%85%B7%E7%AE%B1/">iT-Tools前端开发者工具箱</a></div><div class="item" id="next"><div class="note">下一篇</div><a href="/2025/03/18/250318/Xnote%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%E5%85%BC%E7%9F%A5%E8%AF%86%E5%BA%93%E7%B3%BB%E7%BB%9F/">Xnote个人笔记兼知识库系统</a></div></section></div>
 
 
 
@@ -238,12 +234,7 @@ resultWrap?.addEventListener('click', function (e) {
 
 <footer class="page-footer footnote"><hr><div class="text"><p>该项目库由“<a href="https://vjo.cc" target="_blank" rel="noopener noreferrer">刘郎阁</a>”维护。</p>
 </div></footer>
-<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><div class="widgets">
-
-
-
-<widget class="widget-wrapper toc" id="data-toc" collapse="false"><div class="widget-header dis-select"><span class="name">本文目录</span><a class="cap-action" onclick="sidebar.toggleTOC()" ><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg></a></div><div class="widget-body"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%87%8D%E8%AF%95%E6%AC%A1%E6%95%B0%E8%BF%87%E5%A4%9A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88"><span class="toc-text">重试次数过多解决方案</span></a></li></ol></div><div class="widget-footer"><a class="top" onclick="util.scrollTop()"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><!-- Icon from Solar by 480 Design - https://creativecommons.org/licenses/by/4.0/ --><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5"><path stroke-linejoin="round" d="m9 15.5l3-3l3 3m-6-4l3-3l3 3"/><path d="M7 3.338A9.95 9.95 0 0 1 12 2c5.523 0 10 4.477 10 10s-4.477 10-10 10S2 17.523 2 12c0-1.821.487-3.53 1.338-5"/></g></svg><span>回到顶部</span></a></div></widget>
-</div></aside><div class='float-panel'>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
@@ -256,7 +247,7 @@ resultWrap?.addEventListener('click', function (e) {
 
 <script type="text/javascript">
   window.canonical = {"closeEnable":true,"closeText":"关闭提示","originalHost":null,"officialHosts":["localhost"],"encoded":""};
-  window.canonical["param"] = {"permalink":"http://example.com/2026/07/06/260706/Xnote%E4%B8%AA%E4%BA%BA%E7%AC%94%E8%AE%B0%E5%85%BC%E7%9F%A5%E8%AF%86%E5%BA%93%E7%B3%BB%E7%BB%9F/","checklink":"/js/plugins/video.js"};
+  window.canonical["param"] = {"permalink":"http://example.com/2025/03/18/250318/Bitwarden%E5%AF%86%E7%A0%81%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/","checklink":"/js/plugins/video.js"};
   // Fix: Ensure page is at the correct top position on data load
   if (history.scrollRestoration) {
     history.scrollRestoration = 'auto';
