@@ -41,6 +41,19 @@
 .search-highlight-first {
   animation: highlightFlash 1s ease-in-out 2;
 }
+@media screen and (min-width: 1200px) {
+  :root {
+    --width-main: 94vw !important;
+  }
+  .main .container {
+    max-width: 100vw !important;
+    padding: 0 1rem;
+  }
+  article.post-card {
+    max-width: var(--width-main) !important;
+    width: var(--width-main) !important;
+  }
+}
 @-moz-keyframes highlightFlash {
   0%, 100% {
     background: #ffeb3b;
