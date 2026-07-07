@@ -45,7 +45,22 @@
   }
   .l_main {
     max-width: unset !important;
-    width: 80%;
+    width: 95%;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .l_right {
+    width: auto !important;
+    overflow: initial !important;
+    opacity: 1 !important;
+    pointer-events: auto !important;
+  }
+  .l_body {
+    grid-template-columns: 1fr !important;
+  }
+  .l_main {
+    max-width: var(--width-main) !important;
+    width: 100% !important;
   }
 }
 :root {
