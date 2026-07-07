@@ -1,5 +1,5 @@
 :root {
-  --width-main: 720px;
+  --width-main: 1400px;
   --fsp: 17px;
   --fsh2: calc(var(--fsp) + 11px);
   --fsh3: calc(var(--fsp) + 7px);
@@ -12,72 +12,26 @@
 }
 @media screen and (min-width: 2048px) {
   :root {
-    --width-main: 780px;
+    --width-main: 1600px;
   }
 }
 @media screen and (min-width: 2560px) {
   :root {
-    --width-main: 860px;
+    --width-main: 1800px;
   }
 }
 @media screen and (max-width: 768px) {
   :root {
-    --side-content-width: 188px;
+    --width-main: 720px;
   }
 }
 @media screen and (max-width: 667px) {
   :root {
-    --side-content-width: 224px;
+    --width-main: 100%;
   }
 }
 :root {
   --gap-max: calc(var(--gap-margin) + var(--gap-padding));
-}
-.search-highlight {
-  background: #ffeb3b;
-  padding: 0 3px;
-  border-radius: 3px;
-}
-.search-highlight-first {
-  animation: highlightFlash 1s ease-in-out 2;
-}
-@media screen and (min-width: 1200px) {
-  .layout-wrap.has-leftbar-no-rightbar .main-content {
-    max-width: 100% !important;
-    width: auto;
-  }
-}
-@-moz-keyframes highlightFlash {
-  0%, 100% {
-    background: #ffeb3b;
-  }
-  50% {
-    background: #ff9800;
-  }
-}
-@-webkit-keyframes highlightFlash {
-  0%, 100% {
-    background: #ffeb3b;
-  }
-  50% {
-    background: #ff9800;
-  }
-}
-@-o-keyframes highlightFlash {
-  0%, 100% {
-    background: #ffeb3b;
-  }
-  50% {
-    background: #ff9800;
-  }
-}
-@keyframes highlightFlash {
-  0%, 100% {
-    background: #ffeb3b;
-  }
-  50% {
-    background: #ff9800;
-  }
 }
 :root {
   --hue: 192deg;
