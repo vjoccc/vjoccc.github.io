@@ -41,6 +41,12 @@
 .search-highlight-first {
   animation: highlightFlash 1s ease-in-out 2;
 }
+@media screen and (min-width: 1200px) {
+  .layout-wrap.has-leftbar-no-rightbar .main-content {
+    max-width: 100% !important;
+    width: auto;
+  }
+}
 @-moz-keyframes highlightFlash {
   0%, 100% {
     background: #ffeb3b;
