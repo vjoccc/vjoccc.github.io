@@ -220,7 +220,7 @@ resultWrap?.addEventListener('click', function (e) {
 </article>
 
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">上一篇</div><a href="/2025/09/17/250917/Bender%20%E5%8F%AF%E8%A7%86%E5%8C%96%E9%93%BE%E6%8E%A5%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">Bender 可视化链接管理工具</a></div><div class="item" id="next"><div class="note">下一篇</div><a href="/2025/09/17/250917/EasyVoice%20%E6%96%87%E6%9C%AC%E5%9C%A8%E7%BA%BF%E8%BD%AC%E8%AF%AD%E9%9F%B3%E5%B7%A5%E5%85%B7/">EasyVoice 文本在线转语音工具</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">上一篇</div><a href="/2025/09/17/250917/Bender%20%E5%8F%AF%E8%A7%86%E5%8C%96%E9%93%BE%E6%8E%A5%E7%AE%A1%E7%90%86%E5%B7%A5%E5%85%B7/">Bender 可视化链接管理工具</a></div><div class="item" id="next"><div class="note">下一篇</div><a href="/2025/09/17/250917/GCopy%20%E8%B7%A8%E8%AE%BE%E5%A4%87%E5%A4%8D%E5%88%B6%E7%B2%98%E8%B4%B4%E5%B7%A5%E5%85%B7/">GCopy 跨设备复制粘贴工具</a></div></section></div>
 
 
 
@@ -229,7 +229,100 @@ resultWrap?.addEventListener('click', function (e) {
 
 <footer class="page-footer footnote"><hr><div class="text"><p>该项目库由“<a href="https://vjo.cc" target="_blank" rel="noopener noreferrer">刘郎阁</a>”维护。</p>
 </div></footer>
-<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"></aside><div class='float-panel'>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><%
+
+const wiki = theme.wiki.tree[page.wiki]
+const topic = theme.topic.tree[page.topic]
+const notebook = theme.notebooks.tree[page.notebook]
+
+if (page.rightbar == null) {
+  const { site_tree } = theme
+  var sidebar
+  if (is_home()) {
+    sidebar = site_tree.home.rightbar
+  } else if (page.layout === 'notebooks') {
+    // 笔记本列表页
+    sidebar = site_tree.notebooks.rightbar
+  } else if (page.layout === 'notes') {
+    // 笔记列表页
+    sidebar = notebook ? notebook.rightbar : site_tree.notes.rightbar
+  } else if (notebook) {
+    // 笔记本文章内页
+    sidebar = page.rightbar ?? notebook.note_rightbar
+  } else if (is_category() || is_tag() || is_archive() || ['categories', 'tags', 'archives'].includes(page.layout)) {
+    sidebar = site_tree.index_blog.rightbar
+  } else if (page.layout === 'index_topic') {
+    // 专栏列表页等同于博客列表页
+    sidebar = site_tree.index_blog.rightbar
+  } else if (page.topic?.length > 0) {
+    // 专栏文章内页等同于普通文章内页
+    sidebar = site_tree.post.rightbar
+  } else if (page.layout === 'index_wiki') {
+    sidebar = site_tree.index_wiki.rightbar
+  } else if (page.wiki?.length > 0) {
+    sidebar = site_tree.wiki.rightbar
+  } else if (page.layout === '404') {
+    sidebar = site_tree.error_page.rightbar
+  } else if (page.layout === 'page') {
+    sidebar = site_tree.page.rightbar
+  } else if (page.layout === 'post') {
+    sidebar = site_tree.post.rightbar
+  } else if (page.layout == null) {
+    sidebar = site_tree.page.rightbar
+  } else {
+    sidebar = []
+  }
+
+  if (topic?.rightbar) {
+    sidebar = topic.rightbar
+  }
+  if (wiki?.rightbar) {
+    sidebar = wiki.rightbar
+  }
+
+  page.rightbar = sidebar
+}
+
+
+// parse array string
+if (typeof page.rightbar == 'string') {
+  page.rightbar = page.rightbar.replace(/ /g, '').split(',');
+}
+
+function layoutWidgets() {
+  if (page.rightbar == null || page.rightbar.length == 0) {
+    return ''
+  }
+  var el = ''
+  if (page.rightbar) {
+    page.rightbar.forEach((w, i) => {
+      let name = ''
+      let widget = {}
+      if (typeof w == 'string') {
+        name = w
+      } else if (typeof w == 'object' && w.override) {
+        name = w.override
+      }
+      if (name in theme.widgets) {
+        Object.assign(widget, theme.widgets[name])
+      }
+      if (typeof w == 'object' && (w.override || w.layout)) {
+        Object.assign(widget, w)
+      }
+      if (widget && widget.layout) {
+        el += partial('../widgets/' + widget.layout, {item: widget})
+      }
+    });
+  }
+  if (el.trim().length > 0) {
+    return `<div class="widgets">${el}</div>`
+  } else {
+    return ''
+  }
+}
+
+%>
+<%- layoutWidgets() %></aside><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>
