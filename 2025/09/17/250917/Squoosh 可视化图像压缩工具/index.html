@@ -39,7 +39,7 @@
   
   
   
-  <meta name="keywords" content="图像,可视化,压缩">
+  <meta name="keywords" content="可视化,图像,压缩">
 
   <!-- feed -->
   
@@ -53,7 +53,7 @@
 
   
 
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png"},"dateCreated":"2025-09-17T00:00:00+08:00","dateModified":"2026-07-06T13:10:36+08:00","datePublished":"2025-09-17T00:00:00+08:00","description":"","headline":"Squoosh 可视化图像压缩工具","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/09/17/250917/Squoosh%20%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/"},"publisher":{"@type":"Organization","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png","logo":{"@type":"ImageObject","url":"http://example.com/images/logo.png"}},"url":"http://example.com/2025/09/17/250917/Squoosh%20%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/","keywords":"图像, 可视化, 压缩","image":[]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png"},"dateCreated":"2025-09-17T00:00:00+08:00","dateModified":"2026-07-06T13:10:36+08:00","datePublished":"2025-09-17T00:00:00+08:00","description":"","headline":"Squoosh 可视化图像压缩工具","mainEntityOfPage":{"@type":"WebPage","@id":"http://example.com/2025/09/17/250917/Squoosh%20%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/"},"publisher":{"@type":"Organization","name":"刘郎","sameAs":[],"image":"http://example.com/images/logo.png","logo":{"@type":"ImageObject","url":"http://example.com/images/logo.png"}},"url":"http://example.com/2025/09/17/250917/Squoosh%20%E5%8F%AF%E8%A7%86%E5%8C%96%E5%9B%BE%E5%83%8F%E5%8E%8B%E7%BC%A9%E5%B7%A5%E5%85%B7/","keywords":"可视化, 图像, 压缩","image":[]}</script>
   
 </head>
 <!-- 搜索关键词高亮 + 自动滚动到首个匹配位置 -->
@@ -221,7 +221,7 @@ resultWrap?.addEventListener('click', function (e) {
 </article>
 
 
-<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">上一篇</div><a href="/2025/09/17/250917/Melody%20%E4%B8%AA%E4%BA%BA%E5%9C%A8%E7%BA%BF%E9%9F%B3%E4%B9%90%E5%B9%B3%E5%8F%B0/">Melody 个人在线音乐平台</a></div><div class="item" id="next"><div class="note">下一篇</div><a href="/2025/09/17/250917/PandaWIKI%20NAS%E4%B8%8A%E7%9A%84AI%E7%9F%A5%E8%AF%86%E4%B8%AD%E5%BF%83/">PandaWIKI NAS上的AI知识中心</a></div></section></div>
+<div class="related-wrap" id="read-next"><section class="body"><div class="item" id="prev"><div class="note">上一篇</div><a href="/2025/09/17/250917/PandaWIKI%20NAS%E4%B8%8A%E7%9A%84AI%E7%9F%A5%E8%AF%86%E4%B8%AD%E5%BF%83/">PandaWIKI NAS上的AI知识中心</a></div><div class="item" id="next"><div class="note">下一篇</div><a href="/2025/09/17/250917/Melody%20%E4%B8%AA%E4%BA%BA%E5%9C%A8%E7%BA%BF%E9%9F%B3%E4%B9%90%E5%B9%B3%E5%8F%B0/">Melody 个人在线音乐平台</a></div></section></div>
 
 
 
@@ -230,100 +230,7 @@ resultWrap?.addEventListener('click', function (e) {
 
 <footer class="page-footer footnote"><hr><div class="text"><p>该项目库由“<a href="https://vjo.cc" target="_blank" rel="noopener noreferrer">刘郎阁</a>”维护。</p>
 </div></footer>
-<div class="main-mask" onclick="sidebar.dismiss()"></div></div><aside class="l_right"><%
-
-const wiki = theme.wiki.tree[page.wiki]
-const topic = theme.topic.tree[page.topic]
-const notebook = theme.notebooks.tree[page.notebook]
-
-if (page.rightbar == null) {
-  const { site_tree } = theme
-  var sidebar
-  if (is_home()) {
-    sidebar = site_tree.home.rightbar
-  } else if (page.layout === 'notebooks') {
-    // 笔记本列表页
-    sidebar = site_tree.notebooks.rightbar
-  } else if (page.layout === 'notes') {
-    // 笔记列表页
-    sidebar = notebook ? notebook.rightbar : site_tree.notes.rightbar
-  } else if (notebook) {
-    // 笔记本文章内页
-    sidebar = page.rightbar ?? notebook.note_rightbar
-  } else if (is_category() || is_tag() || is_archive() || ['categories', 'tags', 'archives'].includes(page.layout)) {
-    sidebar = site_tree.index_blog.rightbar
-  } else if (page.layout === 'index_topic') {
-    // 专栏列表页等同于博客列表页
-    sidebar = site_tree.index_blog.rightbar
-  } else if (page.topic?.length > 0) {
-    // 专栏文章内页等同于普通文章内页
-    sidebar = site_tree.post.rightbar
-  } else if (page.layout === 'index_wiki') {
-    sidebar = site_tree.index_wiki.rightbar
-  } else if (page.wiki?.length > 0) {
-    sidebar = site_tree.wiki.rightbar
-  } else if (page.layout === '404') {
-    sidebar = site_tree.error_page.rightbar
-  } else if (page.layout === 'page') {
-    sidebar = site_tree.page.rightbar
-  } else if (page.layout === 'post') {
-    sidebar = site_tree.post.rightbar
-  } else if (page.layout == null) {
-    sidebar = site_tree.page.rightbar
-  } else {
-    sidebar = []
-  }
-
-  if (topic?.rightbar) {
-    sidebar = topic.rightbar
-  }
-  if (wiki?.rightbar) {
-    sidebar = wiki.rightbar
-  }
-
-  page.rightbar = sidebar
-}
-
-
-// parse array string
-if (typeof page.rightbar == 'string') {
-  page.rightbar = page.rightbar.replace(/ /g, '').split(',');
-}
-
-function layoutWidgets() {
-  if (page.rightbar == null || page.rightbar.length == 0) {
-    return ''
-  }
-  var el = ''
-  if (page.rightbar) {
-    page.rightbar.forEach((w, i) => {
-      let name = ''
-      let widget = {}
-      if (typeof w == 'string') {
-        name = w
-      } else if (typeof w == 'object' && w.override) {
-        name = w.override
-      }
-      if (name in theme.widgets) {
-        Object.assign(widget, theme.widgets[name])
-      }
-      if (typeof w == 'object' && (w.override || w.layout)) {
-        Object.assign(widget, w)
-      }
-      if (widget && widget.layout) {
-        el += partial('../widgets/' + widget.layout, {item: widget})
-      }
-    });
-  }
-  if (el.trim().length > 0) {
-    return `<div class="widgets">${el}</div>`
-  } else {
-    return ''
-  }
-}
-
-%>
-<%- layoutWidgets() %></aside><div class='float-panel'>
+<div class="main-mask" onclick="sidebar.dismiss()"></div></div><div class='float-panel'>
   <button type='button' style='display:none' class='laptop-only rightbar-toggle mobile' onclick='sidebar.rightbar()'>
     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6h11m-11 6h11m-11 6h11M4 6h1v4m-1 0h2m0 8H4c0-1 2-2 2-3s-1-1.5-2-1"/></svg>
   </button>

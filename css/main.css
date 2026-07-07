@@ -33,6 +33,23 @@
 :root {
   --gap-max: calc(var(--gap-margin) + var(--gap-padding));
 }
+.l_body {
+  grid-template-columns: var(--sidebar-width) 1fr !important;
+}
+.l_main {
+  max-width: unset !important;
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  :root {
+    --width-main: 1600px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  :root {
+    --width-main: 1900px;
+  }
+}
 :root {
   --hue: 192deg;
   --sat: 98%;
