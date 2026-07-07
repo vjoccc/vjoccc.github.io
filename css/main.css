@@ -35,27 +35,17 @@
 }
 @media screen and (min-width: 1024px) {
   .l_right {
-    display: none !important; /* 直接移除DOM渲染，比width/overflow更彻底 */
+    width: 0 !important;
+    overflow: hidden !important;
+    opacity: 0 !important;
+    pointer-events: none !important;
   }
   .l_body {
-/* 只保留左侧栏和主内容两列，彻底砍掉第三列 */
-    grid-template-columns: var(--sidebar-width, 240px) 1fr !important;
+    grid-template-columns: var(--sidebar-width) 1fr 0fr !important;
   }
   .l_main {
-    max-width: 95% !important;
-    width: 95% !important;
-  }
-}
-@media screen and (max-width: 1023px) {
-  .l_right {
-    display: block !important; /* 如果移动端需要显示右栏，保留此句；若移动端彻底不要右栏，可改为 display:none */
-  }
-  .l_body {
-    grid-template-columns: 1fr !important; /* 单列，主内容占满视口 */
-  }
-  .l_main {
-    max-width: 100% !important; /* 移动端无需受--width-main限制，直接满屏 */
-    width: 100% !important;
+    max-width: unset !important;
+    width: 95%;
   }
 }
 :root {
