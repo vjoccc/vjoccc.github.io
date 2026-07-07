@@ -39,13 +39,7 @@
     overflow: hidden !important;
     opacity: 0 !important;
     pointer-events: none !important;
-  }
-  .l_body {
-    grid-template-columns: var(--sidebar-width) 1fr 0fr !important;
-  }
-  .l_main {
-    max-width: unset !important;
-    width: 95%;
+    visibility: hidden !important;
   }
 }
 :root {
